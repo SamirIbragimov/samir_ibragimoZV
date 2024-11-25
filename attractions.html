@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./attractions.assets/css/attractions.css">
+    <title>attractions</title>
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title">Loading...</div>
+            </div>
+            <div class="text">Loading...</div>
+        </div>
+    </div>
+
+    <section class="main">
+        <a href="./index.html"><img class="main__logo" src="./attractions.assets/svg/header__logo.svg" alt=""></a>
+    </section>
+    <section class="attractions">
+        <div class="attractions__wrapper">
+            <div class="attractions__tittle">
+                <h1 class="attractions__tittle-text">
+                    Достопримечательности
+                </h1>
+                <div class="attractions__tittle-controls">
+                    <button class="attractions__tittle-btn">
+                        Выбор категории
+                    </button>
+                    <input type="text" class="attractions__tittle-search" placeholder="Поиск..." />
+                </div>
+                <div class="attractions__sort-options" style="display: none;">
+                    <button class="attractions__sort-btn" data-sort="default">По умолчанию</button>
+                    <button class="attractions__sort-btn" data-sort="popular">Популярное</button>
+                    <button class="attractions__sort-btn" data-sort="az">По алфавиту от А до Я</button>
+                    <button class="attractions__sort-btn" data-sort="za">По алфавиту от Я до А</button>
+                </div>
+            </div>
+            <div class="attractions__box">
+                <div class="attractions__box-wrapper">
+                    
+                </div>
+            </div>
+            <div class="attractions__pagination">
+                <button class="attractions__pagination-btn" data-page="1">
+                    1
+                </button>
+                <button class="attractions__pagination-btn" data-page="2">
+                    2
+                </button>
+                <button class="attractions__pagination-btn" data-page="3">
+                    3
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__contact">
+            <ul class="footer__contact-box">
+                <a class="footer__contact-author"><span class="author">АВТОР</span></a>
+                <li class="footer__contact-author">Telegram: @nsksn9</li>
+                <li class="footer__contact-author">+79625584981</li>
+                <li class="footer__contact-author">samir.ibragimov.2020@inbox.ru</li>
+            </ul>
+            <ul class="footer__contact-designer">
+                <a class="footer__contact-author"><span class="author">ДИЗАЙНЕР</span></a>
+                <li class="footer__contact-author">Telegram: @Qupa_style</li>
+                <li class="footer__contact-author">+79128552570</li>
+                <li class="footer__contact-author">cupinstepa@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./attractions.assets/js/attractions.js"></script>
+</body>
+
+</html>

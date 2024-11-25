@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ижевск</title>
+</head>
+<body >
+    <div id="loading-overlay">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title">Loading...</div>
+            </div>
+            <div class="text">Loading...</div>
+        </div>
+    </div>
+   <section class="main">
+        <div class="main__wrapper"> 
+            <div class="main__header">
+              <div class="main__header-logo">
+                <a href="./index.html"><img src="./assets/svg/header__logo.svg" alt=""></a>
+              </div>  
+              <div class="main__header-burger">
+                <button class="menu__icon" id="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal">&times;</span>
+                    <h2 class="modal__tittle">
+                        Ижевск
+                    </h2>
+                    <p class="modal__paragraph">
+                        Путеводитель по городу
+                    </p>
+                    <ul class="modal__block">
+                        <li class="modal__text"><a class="modal__text-decoration" href="./attractions.html">Достопримечательности</a></li>
+                        <li class="modal__text"><a class="modal__text-decoration" href="./contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            
+            <div class="main__text">
+                <h1 class="main__text-tittle">Ижевск</h1>
+                <p class="main__text-paragraph">Путеводитель по городу</p>
+            </div>
+            <div class="main__text-2">
+                <span class="main__text-2-paragraph"><span><span class="capital">Столица</span> Удмуртской <br> Республики, с большой и <br> интересной историей</span>
+            </div>
+            
+            <div class="main__slider">
+                
+            </div>
+            <button class="controlls">
+                <img class="main__slider-button-prev prev" src="./assets/svg/Arrow left.svg" alt="">
+                <img class="main__slider-button-next next" src="./assets/svg/Arrow right.svg" alt="">
+            </button>
+        </div>    
+   </section>
+    <script src="./assets/js/script.js"></script>
+    <section class="info">
+        <div class="info__box">
+            <div class="info__box-text">
+                <p class="info__box-text-p">Ижевск — это город в Удмуртской <br> Республике,<br> расположенный на <br> реке Иж. Он является <br>важным <br> промышленным, <br> научным и культурным <br> центром региона.</p>
+            </div>
+            <div class="info__box-image">
+                <img src="./assets/svg/info_image_1.svg" alt="">
+            </div>
+        </div>
+        <div class="info__box-2">
+            <div class="info__box-image-2">
+                <img src="./assets/svg/info_2.svg" alt="">
+            </div>
+            <div class="info__box-text-2">
+                <p>В Ижевске развиты <br> машиностроение, металлургия, <br> лёгкая и пищевая промышленность. <br> Здесь также расположены <br> несколько научно- <br> исследовательских институтов и <br> вузов.</p>
+            </div>
+        </div>
+        <div class="info__box-3">
+            <div class="info__box-3-text-3">
+                <p>Город богат историческими и <br> культурными памятниками. Среди них <br> можно выделить Александро- <br> Невский собор, Удмуртский <br> республиканский музей  <br>изобразительных искусств, <br> Удмуртский государственный театр <br> оперы и балета и другие.</p>
+            </div>
+            <div class="info__box-3-image-3">
+                <img src="./assets/svg/info_3.svg" alt="">
+            </div>
+        </div>
+        <div class="info__box-4">
+            <div class="info__box-4-image-4">
+                <img src="./assets/svg/info_4.svg"" alt="">
+            </div>
+            <div class="info__box-4-text-4">
+                <p> Также в Ижевске есть несколько парков и скверов, где можно отдохнуть и насладиться природой.</p>  
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <h2 class="map__tittle">
+            Карта города
+        </h2>
+        <div class="map__box">
+            <script class="map__box" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A15368e023277047de3c8769c5066beffff7790a772d91430e6f47ccbe5579f9a&amp;width=100%&amp;height=750&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+        <img class="map__line" src="./svg/Line 5.svg" alt="">
+
+    </section>
+    <footer class="footer">
+        <div class="footer__contact">
+            <ul class="footer__contact-box">
+                <a class="footer__contact-author"><span class="author">АВТОР</span></a>
+                <li class="footer__contact-author">Telegram: @nsksn9</li>
+                <li class="footer__contact-author">+79625584981</li>
+                <li class="footer__contact-author">samir.ibragimov.2020@inbox.ru</li>
+            </ul>
+            <ul class="footer__contact-designer">
+                <a class="footer__contact-author"><span class="author">ДИЗАЙНЕР</span></a>
+                <li class="footer__contact-author">Telegram: @Qupa_style</li>
+                <li class="footer__contact-author">+79128552570</li>
+                <li class="footer__contact-author">cupinstepa@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+

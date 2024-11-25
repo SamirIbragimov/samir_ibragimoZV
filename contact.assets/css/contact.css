@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alumni Sans", sans-serif;
+  border: 0;
+  scrollbar-width: none;
+}
+
+.author {
+  font-size: 64px;
+  font-weight: 800;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contact {
+  background-image: url(../img/contact__main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.contact__header {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.contact__tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__tittle-text {
+  font-size: 144px;
+  color: #4c3a51;
+  font-weight: 700;
+}
+.contact__connect {
+  display: flex;
+  justify-content: center;
+}
+.contact__connect-btn {
+  cursor: pointer;
+  width: 375px;
+  height: 80px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 800;
+  background-color: transparent;
+}
+.contact__connect__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.contact__connect__modal.active {
+  display: flex;
+}
+.contact__connect__modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 35%;
+  border-radius: 10px;
+  text-align: center;
+}
+.contact__connect__modal-close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact__connect__modal-head {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+.contact__connect__modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__connect__modal-form-name, .contact__connect__modal-form-number, .contact__connect__modal-form-email {
+  font-size: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.contact__connect__modal-form-name-input, .contact__connect__modal-form-number-input, .contact__connect__modal-form-email-input {
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: #e7ab79;
+  margin-top: 5px;
+}
+.contact__connect__modal-form-btn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #e7ab79;
+  border-radius: 10px;
+  font-size: 26px;
+  color: #2c2b2b;
+  font-weight: 400;
+  background-color: rgba(231, 171, 121, 0.4);
+  cursor: pointer;
+}
+.contact__info {
+  padding-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+.contact__info-block {
+  list-style-type: none;
+}
+.contact__info-text {
+  font-size: 48px;
+  color: white;
+  font-weight: 200;
+}
+.contact__info-text span {
+  font-weight: 800;
+}
+.contact__footer {
+  height: 35%;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact__footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+}
+.contact__footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.contact__footer-designer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.contact__footer-author {
+  font-size: 40px;
+  color: white;
+}
+
+.orange {
+  color: #ff7a01;
+}
+
+@media (max-width: 768px) {
+  .contact__tittle-text {
+    font-size: 96px;
+  }
+  .contact__connect-btn {
+    width: 80%;
+    height: 60px;
+    font-size: 24px;
+  }
+  .contact__connect__modal-content {
+    width: 80%;
+  }
+  .contact__connect__modal-head {
+    font-size: 36px;
+  }
+  .contact__connect__modal-form-name, .contact__connect__modal-form-number, .contact__connect__modal-form-email {
+    font-size: 24px;
+  }
+  .contact__connect__modal-form-name-input, .contact__connect__modal-form-number-input, .contact__connect__modal-form-email-input {
+    font-size: 20px;
+  }
+  .contact__connect__modal-form-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 22px;
+  }
+  .contact__info {
+    width: 90%;
+  }
+  .contact__info-text {
+    font-size: 36px;
+  }
+  .contact__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .contact__footer-author {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+.footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4c3a51;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+.footer__contact-box, .footer__contact-designer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__contact-author {
+  color: white;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .contact__footer {
+    text-align: center;
+  }
+  .contact__footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .contact__footer-wrapper-author {
+    font-size: 20px;
+  }
+}
+#loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+@keyframes typeAndDelete {
+  0%, 10% {
+    width: 0;
+  }
+  45%, 55% {
+    width: 6.2em;
+  }
+  100% {
+    width: 0;
+  }
+}
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  padding: 2.5em 1em;
+  width: 20em;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.terminal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
+}
+
+.terminal-controls {
+  float: right;
+}
+
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green;
+  animation: typeAndDelete 4s steps(11) infinite, blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}/*# sourceMappingURL=contact.css.map */

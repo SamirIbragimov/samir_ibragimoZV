@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title">Loading...</div>
+            </div>
+            <div class="text">Loading...</div>
+        </div>
+    </div>
+    <section class="contact">
+        <header class="contact__header">
+            <a href="./index.html"><img src="./contact.assets/svg/header_logo.svg" alt="Logo" class="contact__logo"></a>
+        </header>
+
+        <div class="contact__tittle">
+            <h1 class="contact__tittle-text">Контакты</h1>
+        </div>
+
+        <div class="contact__connect">
+            <button class="contact__connect-btn" id="myBtn">Связаться с нами</button>
+        </div>
+
+        <div id="myModal" class="contact__connect__modal">
+            <div class="contact__connect__modal-content">
+                <span class="contact__connect__modal-close">&times;</span>
+                <p class="contact__connect__modal-head">Связаться с нами</p>
+                <form action="" method="get" class="contact__connect__modal-form">
+                    <div class="contact__connect__modal-form-name">
+                        Имя:
+                        <input type="text" placeholder="имя" class="contact__connect__modal-form-name-input">
+                    </div>
+                    <div class="contact__connect__modal-form-number">
+                        Телефон:
+                        <input type="number" placeholder="номер телефона"
+                            class="contact__connect__modal-form-number-input">
+                    </div>
+                    <div class="contact__connect__modal-form-email">
+                        E-mail:
+                        <input type="email" placeholder="электронная почта"
+                            class="contact__connect__modal-form-email-input">
+                    </div>
+                    <button class="contact__connect__modal-form-btn">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact__info">
+            <ul class="contact__info-block">
+                <li class="contact__info-text"><span class="contact__info-text-span">Отдел по обращениям граждан</span>
+                </li>
+                <li class="contact__info-text"><span class="contact__info-text-span">Тел. приемной:</span> +7 (3412)
+                    41-41-42</li>
+                <li class="contact__info-text"><span class="contact__info-text-span">E-mail</span></li>
+                <li class="contact__info-text">main@izh.udmr.ru</li>
+                <li class="contact__info-text">426070, Удмуртская Республика, г. Ижевск, ул. Пушкинская, д. 276</li>
+            </ul>
+        </div>
+
+        <footer class="contact__footer">
+            <div class="contact__footer-wrapper">
+                <ul class="contact__footer-box">
+                    <a class="contact__footer-author"><span class="author">АВТОР:</span></a>
+                    <li class="contact__footer-author">Telegram: @nsksn9</li>
+                    <li class="contact__footer-author">+79625584981</li>
+                    <li class="contact__footer-author">samir.ibragimov.2020@inbox.ru</li>
+                </ul>
+                <ul class="contact__footer-designer">
+                    <a class="contact__footer-author"><span class="author">ДИЗАЙНЕР:</span></a>
+                    <li class="contact__footer-author">Telegram: @Qupa_styleк</li>
+                    <li class="contact__footer-author">+79128552570</li>
+                    <li class="contact__footer-author">cupinstepa@gmail.com</li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <script src="./contact.assets/contact_script.js"></script>
+</body>
+
+</html>
